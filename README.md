@@ -9,6 +9,7 @@ Plateforme AIOps de détection d'anomalies et de classification d'incidents sur 
 - Génération de rapports PDF
 
 ## Structure du projet
+\`\`\`
 CoreGUARD/
 ├── app.py # Point d'entrée Streamlit
 ├── engine/ # Modules du pipeline ML
@@ -19,7 +20,7 @@ CoreGUARD/
 ├── models/ # Modèles entraînés (.pkl)
 ├── docs/ # Documentation
 └── outputs/ # Rapports générés
-
+\`\`\`
 ## Installation
 Voir [docs/MODOP_installation.md](docs/MODOP_installation.md) pour le guide d'installation complet.
 
