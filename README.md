@@ -20,12 +20,7 @@ CoreGUARD/
 ├── docs/ # Documentation
 └── outputs/ # Rapports générés
 
-
 ## Installation
 Voir [docs/MODOP_installation.md](docs/MODOP_installation.md) pour le guide d'installation complet.
 
-## Utilisation
-```bash
-streamlit run app.py
-```
 
