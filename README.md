@@ -63,3 +63,41 @@ Un pic net d'anomalies apparaît entre 8h et 12h, correspondant probablement aux
 | Dimanche | 19 |
 
 Les anomalies sont plus fréquentes en début de semaine (lundi-mardi) et diminuent le week-end.
+### Performance du modèle
+
+Modèle : XGBoost — classification binaire d'incidents, validé par cross-validation temporelle (5 folds).
+
+**F1-score en cross-validation :** 0.751 ± 0.306
+
+#### Seuil par défaut (0.500)
+
+| Classe | Precision | Recall | F1-score | Support |
+|--------|-----------|--------|----------|---------|
+| 0 (normal) | 0.910 | 1.000 | 0.953 | 487 |
+| 1 (incident) | 1.000 | 0.304 | 0.467 | 69 |
+
+- Accuracy : 0.914
+- ROC-AUC : 0.995
+
+#### Seuil optimal (0.034, maximisant le F1)
+
+| Classe | Precision | Recall | F1-score | Support |
+|--------|-----------|--------|----------|---------|
+| 0 (normal) | 0.992 | 0.982 | 0.987 | 487 |
+| 1 (incident) | 0.878 | 0.942 | 0.909 | 69 |
+
+- Accuracy : 0.977
+- ROC-AUC : 0.995
+- F1-score : 0.909
+
+Le seuil optimal a été retenu pour maximiser la détection des incidents (recall) tout en gardant une bonne précision, plutôt que le seuil par défaut de 0.5.
+
+#### Top features (importance XGBoost)
+
+| Feature | Importance |
+|---------|------------|
+| `pdc__num-cmds-aapn-ok__diff_15min` | 0.082 |
+| `pgw__eps-bearer-creation-attempted__delta` | 0.075 |
+| `stats__dt_error_rate__diff_15min` | 0.060 |
+| `pmjob__memory_usage_rate__roll_std_1h` | 0.057 |
+| `pgw__eps-bearer-creation-attempted__delta__rolling` | 0.056 |
