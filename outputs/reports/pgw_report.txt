@@ -1,0 +1,3 @@
+[PGW] Input shape: (2874, 140)
+Constant columns dropped: 72
+Gauge: 17, Cumulative->delta: 48, Resets: 14

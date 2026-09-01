@@ -1,0 +1,2 @@
+[PDC] Input shape: (2874, 25)
+Constant columns dropped: 12

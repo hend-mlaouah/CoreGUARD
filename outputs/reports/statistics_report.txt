@@ -1,0 +1,2 @@
+[STATISTICS] Input shape: (2874, 68)
+Constant columns dropped: 20

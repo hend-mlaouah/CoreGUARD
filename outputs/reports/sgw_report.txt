@@ -1,0 +1,3 @@
+[SGW] Input shape: (2873, 317)
+Constant columns dropped: 214
+Gauge: 7, Cumulative->delta: 52, Exclues (never_delta): 43, Resets: 10

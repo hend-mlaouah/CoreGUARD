@@ -1,0 +1,16 @@
+============================================================
+PM JOB CLEANING REPORT
+============================================================
+Input shape: (2877, 4761)
+Malformed rows dropped (Time unparsable, likely duplicated header): 3
+Rows after malformed-row removal: 2874 (was 2877)
+Duplicate rows: 0
+Duplicate Time values: 0
+Empty columns dropped: 0
+Constant columns dropped: 2
+Numeric KPI columns: 4733
+Total missing values: 9476
+Sampling interval median: 0 days 00:15:00
+Sampling interval min: 0 days 00:14:00
+Sampling interval max: 0 days 00:16:00
+Final shape: (2874, 4759)
