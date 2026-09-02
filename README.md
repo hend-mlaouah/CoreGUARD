@@ -49,7 +49,6 @@ Modèle : Isolation Forest — détection non supervisée d'anomalies sur les KP
 | 11h | 30 | 23h | 8  |
 
 Un pic net d'anomalies apparaît entre 8h et 12h, correspondant probablement aux heures de forte charge réseau.
-
 #### Répartition des anomalies par jour
 
 | Jour | Anomalies |
@@ -92,12 +91,3 @@ Modèle : XGBoost — classification binaire d'incidents, validé par cross-vali
 
 Le seuil optimal a été retenu pour maximiser la détection des incidents (recall) tout en gardant une bonne précision, plutôt que le seuil par défaut de 0.5.
 
-#### Top features (importance XGBoost)
-
-| Feature | Importance |
-|---------|------------|
-| `pdc__num-cmds-aapn-ok__diff_15min` | 0.082 |
-| `pgw__eps-bearer-creation-attempted__delta` | 0.075 |
-| `stats__dt_error_rate__diff_15min` | 0.060 |
-| `pmjob__memory_usage_rate__roll_std_1h` | 0.057 |
-| `pgw__eps-bearer-creation-attempted__delta__rolling` | 0.056 |
