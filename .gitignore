@@ -1,0 +1,25 @@
+# Environnement virtuel
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Variables d'environnement
+.env
+
+# Données volumineuses (optionnel selon ton besoin)
+# data/raw/
+# data/cleaned/
+# data/processed/
+
+# IDE
+.vscode/
+*.egg-info/
